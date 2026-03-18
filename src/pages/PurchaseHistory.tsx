@@ -3,10 +3,8 @@ import {
     Package, 
     CheckCircle, 
     Search,
-    Filter,
     AlertTriangle,
-    Download,
-    Eye
+    Download
 } from 'lucide-react';
 import client from '../api/client';
 import { motion, AnimatePresence } from 'framer-motion';

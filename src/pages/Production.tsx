@@ -1,21 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { 
-    Factory, 
     Plus, 
     Search, 
     Calendar, 
     Cpu, 
-    User, 
-    Hash,
     ClipboardList,
     TrendingUp,
     Timer,
     BarChart3,
-    ArrowUpRight,
-    ArrowDownRight,
-    X,
-    Filter,
-    Settings
+    Filter
 } from 'lucide-react';
 import client from '../api/client';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -35,12 +28,8 @@ const Production: React.FC = () => {
     const [productions, setProductions] = useState<Production[]>([]);
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
-    const [isModalOpen, setIsModalOpen] = useState(false);
     
     // For new production entry (simulated for admin)
-    const [machineId, setMachineId] = useState('');
-    const [quantity, setQuantity] = useState(0);
-
     const fetchProduction = async () => {
         setLoading(true);
         try {

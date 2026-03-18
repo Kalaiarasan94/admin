@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { 
     ShieldCheck, 
-    CheckCircle, 
     Clock, 
     Search,
-    Filter,
     AlertTriangle,
-    Store,
-    BadgeIndianRupee,
     Package
 } from 'lucide-react';
 import client from '../api/client';

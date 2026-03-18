@@ -9,10 +9,8 @@ import {
     Settings,
     Power,
     Zap,
-    Thermometer,
     Clock,
-    Wrench,
-    Shield
+    Wrench
 } from 'lucide-react';
 import client from '../api/client';
 import { motion, AnimatePresence } from 'framer-motion';

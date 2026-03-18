@@ -4,7 +4,6 @@ import {
     CheckCircle, 
     Search,
     Download,
-    Eye,
     TrendingUp
 } from 'lucide-react';
 import client from '../api/client';

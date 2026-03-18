@@ -5,15 +5,13 @@ import {
     Search, 
     ShieldCheck, 
     ShieldAlert, 
-    Calendar,
     Package,
     ClipboardCheck,
     AlertCircle,
     Activity,
     FileText,
     TrendingUp,
-    Filter,
-    ArrowUpRight
+    Filter
 } from 'lucide-react';
 import client from '../api/client';
 import { motion, AnimatePresence } from 'framer-motion';

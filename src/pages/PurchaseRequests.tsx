@@ -80,6 +80,7 @@ const PurchaseRequests: React.FC = () => {
     const handleEdit = (req: PurchaseRequest) => {
         setEditingId(req.id);
         setEditForm({
+            vendor_id: '', // Ensure vendor_id is present
             vendor_name: req.vendor_name || '',
             vendor_price: req.vendor_price || '',
             requested_quantity: req.requested_quantity || ''

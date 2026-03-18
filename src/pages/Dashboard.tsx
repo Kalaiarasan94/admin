@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { 
     Users, 
-    Package, 
     Cpu, 
     TrendingUp, 
     AlertTriangle,
@@ -11,15 +10,12 @@ import {
     ArrowDownRight,
     Shield,
     ClipboardCheck,
-    Calendar,
     Activity,
     ChevronRight,
-    TrendingDown,
     Filter
 } from 'lucide-react';
 import client from '../api/client';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 interface DashboardStats {
     users: { role: string; count: string }[];
@@ -98,7 +94,6 @@ const ActivityItem: React.FC<{ title: string; time: string; type: 'success' | 'w
 };
 
 const Dashboard: React.FC = () => {
-    const navigate = useNavigate();
     const [stats, setStats] = useState<DashboardStats | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);

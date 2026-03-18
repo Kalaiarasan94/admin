@@ -8,8 +8,7 @@ import {
     Trash2, 
     Search,
     Filter,
-    AlertTriangle,
-    Eye
+    AlertTriangle
 } from 'lucide-react';
 import client from '../api/client';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -162,7 +161,7 @@ const SalesApprovals: React.FC = () => {
                                 <AlertTriangle className="mx-auto text-rose-500 mb-4" size={48} />
                                 <h2 className="text-xl font-black text-slate-900 dark:text-white mb-2">Sync Failure</h2>
                                 <p className="text-slate-500 dark:text-slate-400 mb-6">{error}</p>
-                                <button onClick={fetchInvoices} className="px-6 py-3 bg-slate-900 dark:bg-white dark:text-slate-900 text-white rounded-xl text-sm font-bold shadow-xl">Retry</button>
+                                <button onClick={() => fetchInvoices()} className="px-6 py-3 bg-slate-900 dark:bg-white dark:text-slate-900 text-white rounded-xl text-sm font-bold shadow-xl">Retry</button>
                             </div>
                         </div>
                     ) : filteredInvoices.length === 0 ? (
